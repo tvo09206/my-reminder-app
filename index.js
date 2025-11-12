@@ -30,7 +30,8 @@ const pool = new Pool({
   host: DB_HOST,        // 你的数据库主机地址
   database: 'postgres', // 默认数据库
   password: DB_PASSWORD,// 你的密码
-  port: 5432,           // 默认端口
+  port: 5432, 
+  family: 4,// 默认端口
 });
 
 // 启动时，创建我们需要的“提醒表”
