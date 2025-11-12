@@ -32,6 +32,7 @@ const pool = new Pool({
   password: DB_PASSWORD,// 你的密码
   port: 5432, 
   family: 4,// 默认端口
+  connectionTimeoutMillis: 30000,
 });
 
 // 启动时，创建我们需要的“提醒表”
